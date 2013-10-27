@@ -1,0 +1,29 @@
+{
+    "name": "zf-hipsters/asset-manager",
+    "description": "A simple module that allows zf2 module vendors to include js/img/css files from their own module rather than from public. Safe, secure and easy!",
+    "type": "library",
+    "keywords": [
+        "zf2 abstract asset manager service"
+    ],
+    "homepage": "https://github.com/zf-hipsters/asset-manager",
+    "authors": [
+        {
+            "name": "Aaron Weatherall",
+            "email": "aaron@weatherall.net.au",
+            "homepage": "http://www.aaronweatherall.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": ">2.2.0rc1",
+        "zf-hipsters/zfh-abstract-factory": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "AssetManager": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
