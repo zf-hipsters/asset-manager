@@ -61,7 +61,7 @@ class Assets extends AbstractActionController
 
         $assetFolder = $config['asset-manager'][$module];
 
-        $target = CF_MODULE . DS . $assetFolder . DS . $type . DS . $file;
+        $target = $assetFolder . DS . $type . DS . $file;
 
         if (file_exists($target)) {
             return $target;
