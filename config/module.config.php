@@ -1,7 +1,7 @@
 <?php
 return array(
     'asset-manager' => array(
-        'default' => 'AssetManager/src/AssetManager/Assets',
+        'default' => dirname(__DIR__) . '/src/AssetManager/Assets',
     ),
     'router' => array(
         'routes' => array(
