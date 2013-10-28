@@ -6,7 +6,7 @@ class Module
     public function onBootstrap()
     {
         if (!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
-        define ('CF_MODULE', dirname(dirname(__file__)));
+        define ('CF_MODULE', getcwd() . '/module');
     }
 
     public function getConfig()
